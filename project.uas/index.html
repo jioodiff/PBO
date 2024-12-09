@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUAL BELI GAMING</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-container" class="fade-in">
+        <div class="login-header">
+            <h2>Welcome To The Store</h2>
+        </div>
+        <form id="login-form" onsubmit="handleLogin(event)">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Masukkan username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Masukkan password" required>
+            </div>
+            <button type="submit">Masuk</button>
+        </form>
+        <p id="login-error" style="color: red; display: none;">Username atau password salah!</p>
+        <div class="login-footer">
+        </div>
+    </div>    
+    <main id="app-container" class="fade-out" style="display: none;">
+        <header>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#">Produk</a></li>
+                    <li><a href="#">Keranjang</a></li>
+                    <li><a href="#">Keluar</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="product-section">
+                <h2>Daftar Produk</h2>
+                <div class="product-list">
+                    <!-- RGX Carambit -->
+                    <div class="product">
+                        <img src="https://i.pinimg.com/736x/3b/06/c2/3b06c27b8fe8640cc72b4256c388481c.jpg" alt="RGX Carambit" class="product-image">
+                        <h3>RGX Carambit</h3>
+                        <p>Harga: Rp 500,000</p>
+                        <button onclick="addToCart('RGX Carambit', 500000)">Tambahkan</button>
+                    </div>
+                    <!-- Reaver Carambit -->
+                    <div class="product">
+                        <img src="https://i.pinimg.com/736x/a5/9d/25/a59d25c0178af54a3cdcf1735eea8a8f.jpg" alt="Reaver Carambit" class="product-image">
+                        <h3>Reaver Carambit</h3>
+                        <p>Harga: Rp 550,000</p>
+                        <button onclick="addToCart('Reaver Carambit', 550000)">Tambahkan</button>
+                    </div>
+                    <!-- Kuronami No Yaiba -->
+                    <div class="product">
+                        <img src="https://i.pinimg.com/736x/78/c3/35/78c335a6cfb9b0fac562ee07ae012d38.jpg" alt="Kuronami No Yaiba" class="product-image">
+                        <h3>Kuronami No Yaiba</h3>
+                        <p>Harga: Rp 700,000</p>
+                        <button onclick="addToCart('Kuronami No Yaiba', 700000)">Tambahkan</button>
+                    </div>
+                    <!-- Ruination Sword -->
+                    <div class="product">
+                        <img src="https://i.pinimg.com/736x/4c/be/23/4cbe2399e9be9dc24c94a0461d7e6d9e.jpg" alt="Ruination Sword" class="product-image">
+                        <h3>Ruination Sword</h3>
+                        <p>Harga: Rp 750,000</p>
+                        <button onclick="addToCart('Ruination Sword', 750000)">Tambahkan</button>
+                    <!-- Jett Knife -->
+                    <div class="product">
+                        <img src="https://i.pinimg.com/736x/2d/71/c8/2d71c8243791d8e43228272ce656aa36.jpg" alt="Jett Knife" class="product-image">
+                        <h3>Jett Knife</h3>
+                        <p>Harga: Rp 650,000</p>
+                        <button onclick="addToCart('Jett Knife', 650000)">Tambahkan</button>
+                    </div>
+            </div>
+            <div class="cart-section">
+                <h2>Keranjang Belanja</h2>
+                <ul id="cart-items"></ul>
+                <p>Total: Rp <span id="total-price">0</span></p>
+                <button id="checkout-button" onclick="checkout()">Checkout</button>
+            </div>
+            <li><a href="#" onclick="logout()">Keluar</a></li>
+            <div id="cart-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button" onclick="closeCart()">&times;</span>
+                    <h2>Keranjang Belanja</h2>
+                    <ul id="cart-items-modal"></ul>
+                    <p>Total Harga: Rp <span id="cart-total-price">0</span></p>
+                    <button onclick="checkout()">Checkout</button>
+                </div>
+                <li><a href="#" onclick="openCart()">Keranjang</a></li>
+            </div>            
+        </main>        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
