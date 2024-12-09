@@ -1,0 +1,314 @@
+/* Body dan Dasar */
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(45deg, #0f0f0f, #1a1a1a);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #ff007f, #ffcc00);
+    color: #000;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(255, 0, 127, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Login Container */
+#login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px; /* Atur lebar frame */
+    padding: 30px; /* Tambahkan padding untuk ruang di dalam frame */
+    background: rgba(25, 25, 25, 0.95);
+    border: 2px solid #ff007f;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(255, 0, 127, 0.8);
+}
+
+/* Header Login */
+.login-header h2 {
+    margin: 0;
+    font-size: 28px;
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ff007f, 0 0 20px #ffcc00;
+    margin-bottom: 20px; /* Tambahkan jarak bawah header */
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 20px; /* Tambahkan jarak antar input */
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 5px; /* Jarak antara label dan input */
+    text-shadow: 0 0 5px #ff007f;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ff007f;
+    border-radius: 5px;
+    background: #0f0f0f;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    box-shadow: 0 2px 10px rgba(255, 0, 127, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.input-group input:focus {
+    outline: none;
+    box-shadow: 0 0 15px rgba(255, 0, 127, 0.8);
+}
+
+/* Button */
+#login-container button {
+    background-color: #ff007f;
+    color: #fff;
+    padding: 12px;
+    width: 100%; /* Atur tombol agar sesuai lebar form */
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ff007f;
+    transition: all 0.3s ease-in-out;
+}
+
+#login-container button:hover {
+    background: #ffcc00;
+    color: #000;
+}
+
+/* Footer Login */
+.login-footer {
+    margin-top: 20px; /* Jarak antara tombol dan footer */
+}
+
+.login-footer p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.login-footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.login-footer a:hover {
+    color: #ff007f;
+}
+
+/* Navbar */
+nav {
+    background: rgba(25, 25, 25, 0.9);
+    border-bottom: 2px solid #ff007f;
+    padding: 15px 20px;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #ffcc00;
+    letter-spacing: 2px;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.navbar li a:hover {
+    color: #ff007f;
+    text-shadow: 0 0 20px #ff007f, 0 0 40px #ffcc00;
+}
+
+/* Konten */
+main {
+    padding: 20px;
+}
+
+.product-section, .cart-section {
+    background: rgba(25, 25, 25, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(255, 0, 127, 0.5);
+    border: 2px solid #ff007f;
+    margin-bottom: 20px;
+}
+
+.product {
+    background: rgba(40, 40, 40, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ffcc00;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(255, 204, 0, 0.8);
+}
+
+.product h3 {
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ffcc00;
+}
+
+.product p {
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+button {
+    background-color: #ff007f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #ffcc00;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #ffcc00;
+    color: #000;
+}
+
+/* Gambar Produk */
+.product-image {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 2px solid #ff007f;
+    box-shadow: 0 5px 15px rgba(255, 0, 127, 0.8);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-image:hover {
+    transform: scale(1.1);
+}
+
+/* Checkout Button */
+#checkout-button {
+    background: #ff007f;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-shadow: 0 0 10px #ffcc00;
+    transition: all 0.3s ease-in-out;
+}
+
+#checkout-button:hover {
+    background-color: #ffcc00;
+    color: #000;
+    text-shadow: none;
+}
+
+/* Keranjang Belanja */
+.cart-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cart-section ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ff007f;
+    color: #fff;
+}
+
+.cart-section ul li:last-child {
+    border-bottom: none;
+}
+
+.cart-section p {
+    margin-top: 10px;
+    color: #ff007f;
+    font-weight: bold;
+}
+
+/* Animasi untuk Login */
+.fade-in {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.fade-out {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.9);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
